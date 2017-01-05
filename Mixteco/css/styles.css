@@ -1,0 +1,286 @@
+/*************************
+    Global Styles
+*************************/
+
+body {
+    background: #FFF;
+}
+.container-fluid {
+	margin: 0;
+	padding: 5%;
+	box-shadow: 3px 3px 30px 5px rgba(0,0,0,.5);
+    font-family: 'Josefin Sans';
+    color: #000;
+}
+
+.row {
+    margin: 0;
+    padding: 0;
+    background-color: #FFF;
+}
+
+.branding {
+    font-family: 'Pacifico';
+}
+
+img {
+    
+
+}
+
+.center {
+    text-align: center;
+}
+
+.subdued {
+    color: gray;
+    font-size: 80%;
+}
+
+.gray {
+    color: gray;
+}
+
+.bg-img, .bg-img2 {
+    position: fixed;
+    z-index: -1;
+    border-radius: 0;
+    width: 100%;
+}
+
+.bg-img2 {
+    bottom: 0;
+}
+
+/*************************
+    header.php
+*************************/
+
+#logo {
+    text-align: center;
+}
+
+#logo h1 {
+    font-size: 250%;
+    font-size: 4vw;
+}
+
+#top-nav {
+    color: #FFF;
+    text-align: center;
+}
+
+#top-nav ul {
+	display: inline-block;
+	list-style-type: none;
+    width: 100%;
+    padding: 0;
+    text-align: center;
+}
+
+#top-nav li {
+	display: inline-block;
+    padding: 1%;
+}
+
+#top-nav a {
+    font-family: 'Pacifico';
+	color: gray;
+    font-size: 110%;
+}
+
+#top-nav a:hover {
+    text-decoration: none;
+    border-bottom: 2px dotted gray;
+}
+
+.social-link img {
+    width: 20px;
+    padding-bottom: 10px;
+}
+
+#header-image {
+    text-align: center;
+}
+
+#header-image img {
+    width: 85%;
+    opacity: .9;
+}
+
+
+/*************************
+    index.php
+*************************/
+
+#welcome-msg {
+    font-size: 130%;
+    padding: 5% 20%;
+}
+
+#welcome-msg h2 {
+    text-align: center;
+}
+
+#welcome-msg p {
+    text-indent: 1.5em;
+}
+
+.open-table {
+    text-align: center;
+    display: block;
+}
+
+/*************************
+    menu.php
+*************************/
+
+.menu {
+    margin: 2% 5% 0 0;
+    font-size: 125%;
+    color: gray; 
+}
+
+.menu h2 {
+    padding: 3% 1% 0 0;
+}
+
+.menu img {
+    width: 80%;
+}
+
+#dessert img {
+    width: 50%;
+}
+
+.menu ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.menu li {
+    padding: 2%;
+    padding-left: 0;
+}
+
+.menu b {
+    font-size: 120%;
+    margin-right: 20px;
+    color: #FFF;
+}
+
+/*************************
+    directions.php
+*************************/
+iframe {
+    width: 90%;
+    margin: 0 auto;
+}
+
+/*************************
+    footer.php
+*************************/
+footer {
+    color: black;
+}
+
+#footer-logo {
+    width: 100%;
+    text-align: center;
+}
+
+#footer-logo img {
+    width: 20%;
+}
+
+#hours h3 {
+    display: inline-block;
+    font-size: 110%;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+#hours ul {
+    list-style-type: none;
+    padding: 0;
+    width: 50%;
+    margin: 0 auto;
+}
+
+#credits {
+    padding-top: 50px;
+}
+
+/*************************
+    Small-screen devices
+*************************/
+@media only screen and (max-width: 768px) {
+    .container-fluid {
+        padding: 0;
+        box-shadow: none;
+    }
+    .bg-img {
+        display: none;
+    }
+
+    #mobile-nav {
+        position: fixed;
+        z-index: 99;
+        top: 0;
+        width: 100%;
+    }
+
+    #mobile-nav h1 {
+        font-size: 120%;
+    }
+
+    #mobile-nav a {
+        font-size: 130%;
+        color: #fff;
+        border-bottom: 1px solid #333;
+    }
+
+    li.social-link {
+        display: inline;
+    }
+
+    #mobile-menu .social-link a {
+        display: inline;
+        border: none;
+    }
+
+    .social-link img {
+        width: 50px;
+        padding: 10px;
+    }
+
+    #header-image {
+        margin-top: 75px;
+        text-align: center;
+    }
+
+    #header-image img {
+        width: 100%;
+        opacity: .9;
+    }  
+
+    #welcome-msg {
+        font-size: 125%;
+        padding: 5% 10%;
+} 
+
+    .menu img {
+        width: 100%;
+    }
+
+    #footer-logo img {
+        width: 40%;
+    }
+
+    #hours ul {
+        margin: 25px auto;
+        text-align: center;
+    }
+
+}
